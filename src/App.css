@@ -1,0 +1,180 @@
+/* App.css */
+
+/* App.css */
+
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Set the desired height */
+  overflow: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.moving-message {
+  position: absolute;
+  bottom: 0; /* Align the message at the bottom of the banner */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: #fff; /* White text color for contrast */
+  padding: 10px 0; /* Padding for better spacing */
+  text-align: center;
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold;
+  border-top: 3px solid #ffcc00; /* Optional: a border on top for extra emphasis */
+  animation: moveText 10s linear infinite;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for better contrast */
+}
+
+/* Keyframes for moving the message */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Set the desired height here */
+  overflow: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+
+.icon-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.icon-item {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-item i, .logo-icon {
+  font-size: 20px;
+  color: white;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.logo{
+  font-size: 20px;
+  width: 90px;
+  height: 90px;
+  color:  #F3CE4F;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  background-color: #0E76CD;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.icon-item:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.icon-text {
+  position: absolute;
+  top: 130%;
+  right: 300%; /* Move text box to the left of the icon */
+  transform: translateY(-50%); /* Center vertically relative to the icon */
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 25px;
+  color: black;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Specific styles for each icon's text box */
+.location {
+  background-color: #F3CE4F;
+}
+
+.clock {
+  background-color: #F3CE4F;
+}
+
+.phone{
+  background-color: #F3CE4F;
+}
+
+
+
+.icon-item:hover .icon-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+

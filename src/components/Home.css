@@ -1,0 +1,112 @@
+.about-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color:  white;
+    padding-left: 200px;
+  }
+  
+  .about-us-text {
+    width: 40%;
+    padding: 30px;
+    height: auto;
+    text-align: right;
+    float: right;
+}
+  
+  .about-us-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-us-slider {
+    width: 60%;
+  }
+  
+  .about-us-slider img {
+    width: 100%;        /* Ensures the image takes up the full width of its container */
+  height: auto;       /* Maintains the aspect ratio of the image */
+  max-width: 600px;   /* Maximum width of the image */
+  max-height: 400px;  /* Maximum height of the image */
+  object-fit: cover;  /* Ensures the image covers the entire container, cropping if necessary */
+  border-radius: 5px; /* Optional: Adds rounded corners to the image */
+  margin: 0 auto;     /* Centers the image horizontally */
+  }
+  
+  /* Additional Slick Slider Styling */
+  .slick-dots li button:before {
+    color: #333;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #555;
+  }
+
+ 
+  /* Override the default arrow styles */
+.slick-prev, .slick-next {
+    font-size: 30px;
+    color: #333;
+    z-index: 1;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #555;
+  }
+  
+  /* Position arrows inside the slider */
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .head2{
+    background-color: #0F77CD;
+    color: white;
+  }
+
+  .head2 h2{
+    color: wheat;
+    padding: 8px;
+  }
+
+  .menu-container {
+    text-align: center;  /* Center the text and image horizontally */
+    padding: 20px;       /* Optional padding around the content */
+  }
+  
+  .menu-container p{
+    font-size: large;
+  }
+  .menu-header {
+    background-color: #0F77CD; /* Semi-transparent background */
+    padding: 1px;                              /* Add padding inside the header */
+                        /* Shrink width to fit content */
+    border-radius: 10px;                        /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   /* Optional shadow for depth */
+    
+    color: wheat;                      /* Space below the header */
+    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .menu-image {
+    max-width: 100%;     /* Ensures the image is fully visible and scales down if necessary */
+    height: auto;        /* Maintains the aspect ratio */
+    margin-top: 20px;    /* Adds some space above the image */
+  }
+  
+  

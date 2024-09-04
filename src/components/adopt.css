@@ -1,0 +1,68 @@
+.h-container{
+    text-align: left;
+    padding: 20px;
+    width: 50%;
+}
+.h-text h1 {
+    padding-left: 20px;
+    color: wheat;
+    background-color: #0F77CD;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+/* Grid layout for the cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+/* Card style with specified width and height */
+.custom-card {
+    width: 350px;  /* Specify width */
+    height: 600px; /* Specify height */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Image styling to fit within the card */
+.custom-card img {
+    width: 100%;
+    height: 500px; /* Set image height */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Body content to fill the remaining space */
+.custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 200px); /* Adjust height based on image */
+    padding: 10px;
+}
+
+/* Button style */
+.custom-card .btn-primary {
+    background-color: #007bff;
+    border: none;
+    align-self: flex-end; /* Align button at the bottom */
+}
+
+.adopt-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.adopt-button:hover {
+    background-color: #218838;
+    text-decoration: none;
+}
